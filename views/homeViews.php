@@ -11,9 +11,10 @@
     <div class="container">
         <div class="container--card">
             <?php
-            echo $perro->Carta();
-            echo $gato->Carta();
-            echo $elefante->Carta();
+            for ($i=0; $i <= 3 ; $i++) { 
+                $randNum = mt_rand(0,$mamiferoSize-1);
+                    echo $mamiferoArr[$randNum]->Carta(); 
+            }
             ?>
         </div>
     </div>
